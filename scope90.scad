@@ -76,10 +76,14 @@ difference(){
     union(){
 make_holes() lid();
         translate([0,40/2,21]) rotate([-90,0,0]) cylinder(r=1.3*torch_hole/2,h=30);
+        
 
     }
-translate([0,0,21])
-rotate([-90,0,0]) cylinder(r=torch_hole/2,h=50);
+translate([0,40/2,21])
+#rotate([-90,0,0]) cylinder(r=torch_hole/2-1.5,h=50);
+    
+    translate([0,40/2+2,21])
+#rotate([-90,0,0]) cylinder(r=torch_hole/2,h=50);
 }
 }
 
@@ -124,5 +128,5 @@ cylinder(r=12.27,h=118-offset);
 }
 }
 
-full_bottom_bit();
+full_top_bit();
 
