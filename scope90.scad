@@ -22,7 +22,7 @@ module make_holes(){
     difference(){
         union(){children();}
         quad_copy(){
-            translate([30,30,0]) cylinder(r=1.5,h=150,center=true);
+            translate([30,30,0]) cylinder(r=1.5,h=250,center=true);
         }
         
     
@@ -128,5 +128,6 @@ cylinder(r=12.27,h=118-offset);
 }
 }
 
-full_top_bit();
+//full_top_bit();
+full_bottom_bit();
 
